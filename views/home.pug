@@ -1,0 +1,181 @@
+doctype html
+
+html
+  head
+    title Jean Robertou
+
+    //- Bootstrap
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk', crossorigin='anonymous')
+
+    //- Line Awesome
+    link(rel='stylesheet', href='https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css')
+
+    //- Custom Styles
+    link(rel="stylesheet" href="style.css")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  
+  body
+    .container
+      //- About Me
+      .row.mb-4
+        //- Profile picture
+        .col-sm-12.col-md-6
+          img(src="img/WYL_photo_perso_004.jpg", alt="profile picture").profile-picture
+        
+        //- About
+        .col-sm-12.col-md-6
+          h1.text-center Jean Robertou
+          h3.text-center.title-color Développeur web
+
+          br
+
+          p= "Après 6 ans en tant qu'économiste durant lesquels j'ai accompagné de nombreux clients, j'ai souhaité élargir mes horizons et intégrer ma passion pour l’informatique dans ma carrière. À cet égard, j'ai entrepris en 2018 une reconversion en DUT Informatique et travaille aujourd'hui pour une entreprise dans le domaine de l'immobilier, alliant expériences d'économiste avec celles de développeur."
+      
+      //- Education & Work Experiences
+      .row.mb-4
+        //- Work Experiences
+        .col-sm-12.col-md-6
+          h3.mb-4 Expériences Professionnelles
+          //- WHERE YOU LOVE
+          .card.mb-3
+            .card-body
+              h5.card-title.title-color WHERE YOU LOVE
+              .d-flex.justify-content-between
+                p Développeur Web
+                p.text-muted Actuel
+              
+              p J'ai été embauché chez WYL afin d'automatiser l'édition de rapports statistiques en fonction de paramètres divers. Ce poste comprend la maintenance de l'API et de la Base de Données, l'acquisition et l'aggrégation de données externes, la création de routes d'aggrégation ainsi que la création du front-end nécessaire à l'affichage de ces données aggrégées.
+
+              p.text-center js, node.js, NoSQL, MongoDB, React.js
+
+          //- ARTELIA
+          .card.mb-3
+            .card-body
+              h5.card-title.title-color ARTELIA
+              .d-flex.justify-content-between
+                p Développeur
+                p.text-muted Stage (3 mois)
+              
+              p L'objectif de mon stage chez Artelia a été la réalisation d'un module statistiques permettant une analyse multi-critères de la base de données.
+              
+              p.text-center python, pyQT, Postgresql
+
+          //- QUANTITY SURVEYOR
+          .card.mb-3
+            .card-body
+              h5.card-title.title-color= "Gleeds & AE75"
+              .d-flex.justify-content-between
+                p Économiste de la Construction
+                p.text-muted 6 ans
+              
+              p Mes expériences chez Gleeds puis chez AE75 m'ont permis de me confronter à la réalité du terrain en étant directement impliqué dans le processus de conception puis de réalisation d'une multitude d'actifs répartis sur tout le territoire. Mes fonctions comprenaient: suivi financier de chantier, réalisation des pièces écrites, vérification des devis ou encore suivi de la facturation.
+              
+        //- Education
+        .col-sm-12.col-md-6
+          h3.mb-4 Education
+          .card.mb-3
+            .card-body
+              h6.card-title.title-color DUT INFORMATIQUE
+              .d-flex.justify-content-between
+                p Bordeaux
+                p.text-muted 2019
+              
+              p Programmation Orientée Objet, Langages web, Bases de Données, ...
+              
+          .card.mb-3
+            .card-body
+              h6.card-title.title-color= "BTS ÉTUDES & ÉCONOMIE DE LA CONSTRUCTION"
+              .d-flex.justify-content-between
+                p Bordeaux
+                p.text-muted 2011
+              
+              p Estimation des coûts de construction, Rédaction des pièces écrites, ...
+      
+      //- Projects
+      .row.mb-4
+        h3.text-center.col.mb-4 Projets personnels
+
+        .card-deck
+          //- Prix Immobilier
+          .card
+            img(src="https://images.pexels.com/photos/4198430/pexels-photo-4198430.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color PRIX DE L'IMMOBILIER
+              p.card-text Site web permettant d'aller consulter ou télécharger les ventes immobilières réalisées en France.
+              p.card-text Source: DVF - API: Cquest
+              p.card-text.text-center js, node.js, pug
+            .card-footer
+              a.btn.btn-outline-dark(href="https://prix-immobilier.herokuapp.com/")= "Découvrir >>"
+          
+          //- Movie Rater
+          .card
+            img(src="https://images.pexels.com/photos/4198432/pexels-photo-4198432.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color MOVIE RATER
+              p.card-text Site web de notation de film (compte obligatoire).
+              p.card-text Source: TMDB
+              p.card-text.text-center js, node.js, react.js, MongoDB
+            .card-footer
+              a.btn.btn-outline-dark(href="https://glacial-cliffs-84680.herokuapp.com/")= "Découvrir >>"
+        
+      .row.mb-4
+        .card-deck
+          //- Rentabilité Immobilière
+          .card
+            img(src="https://images.pexels.com/photos/4198431/pexels-photo-4198431.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color RENTABILITÉ IMMOBILIÈRE
+              p.card-text Site web permettant de calculer en temps réel la rentabilité d'un d'achat immobilier
+              p.card-text.text-center js, node.js, pug
+            .card-footer
+              a.btn.btn-outline-dark(href="#")= "Découvrir >>"
+          
+          //- Euler Project
+          .card
+            img(src="https://images.pexels.com/photos/4198429/pexels-photo-4198429.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color PROJET EULER
+              p.card-text Série de problèmes mathématiques de difficulté croissante et nécessitant la puissance de calcul d'un ordinateur.
+              p.card-text.text-center js, python
+            .card-footer
+              a.btn.btn-outline-dark(href="https://github.com/jean1591/project_euler")= "Découvrir >>"
+        
+      .row.mb-4
+        h3.text-center.col.mb-4 Tutoriels Réalisés
+        .card-deck
+          
+          //- Brad Traversy
+          .card
+            img(src="https://images.pexels.com/photos/4198655/pexels-photo-4198655.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color BRAD TRAVERSY
+              p.card-text Entre autres: Node.js API Masterclass, React Front to Back, 20 Webs Projects Vanilla JS, ...
+              p.card-text.text-center js, node.js, pug, react.js, MongoDB, PostGresql, ...
+            .card-footer
+              a.btn.btn-outline-dark(href="https://www.udemy.com/user/brad-traversy/")= "Traversy Media >>"
+          
+          //- Udemy
+          .card
+            img(src="https://images.pexels.com/photos/4198654/pexels-photo-4198654.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
+            .card-body
+              h5.card-title.title-color Udemy
+              p.card-text Cours réalisés sur Udemy
+              p.card-text.text-center js + framework js, python + librairie python
+            .card-footer
+              a.btn.btn-outline-dark(href="https://www.udemy.com/user/mark-watney-5/")= "Udemy >>"
+        
+    br
+
+    footer.bg-custom.p-3
+        p.text-center.text-white Jean Robertou - j-rob@live.fr
+
+      
+
+
+
+              
+
+
+
+
+
