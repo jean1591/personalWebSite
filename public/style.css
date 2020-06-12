@@ -10,6 +10,25 @@ body {
 	margin-top: 5%;
 }
 
+.title-color {
+	color: #ba5855;
+}
+
+.bg-custom {
+	background-color: #ba5855;
+}
+
+.chapter {
+	margin-bottom: 5%;
+}
+
+/* PROFILE */
+.profile {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 .profile-picture {
 	height: auto;
 	width: 100%;
@@ -19,10 +38,7 @@ body {
 	margin-bottom: 10px;
 }
 
-.title-color {
-	color: #ba5855;
-}
-
+/* EDUCATION & EXPERIENCE */
 .card {
 	border-radius: 10px;
 }
@@ -41,15 +57,12 @@ body {
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.bg-custom {
-	background-color: #ba5855;
-}
-
-.chapter {
-	margin-bottom: 5%;
-}
-
+/* MEDIA */
 @media (max-width: 500px) {
+	.card.exp {
+		width: 95%;
+		margin: auto;
+	}
 	.card-deck .card {
 		margin-bottom: 10%;
 	}

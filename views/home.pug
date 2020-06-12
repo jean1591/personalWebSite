@@ -17,9 +17,9 @@ html
   body
     .container
       //- About Me
-      .row.mb-4
+      .row.mb-4.profile
         //- About
-        .col-sm-12.col-md-6
+        .col-sm-12.col-md-8
           h1.text-center Jean Robertou
           h3.text-center.title-color Développeur Web
 
@@ -27,7 +27,7 @@ html
 
           p= "Après 6 ans en tant qu'économiste durant lesquels j'ai accompagné de nombreux clients, j'ai souhaité élargir mes horizons et intégrer ma passion pour l’informatique dans ma carrière. À cet égard, j'ai entrepris en 2018 une reconversion en DUT Informatique et travaille aujourd'hui pour une entreprise dans le domaine de l'immobilier, alliant expériences d'économiste et de développeur."
         //- Profile picture
-        .col-sm-12.col-md-6
+        .col-sm-12.col-md-4
           img(src="img/WYL_photo_perso_004.jpg", alt="profile picture").profile-picture
       
       //- Education & Work Experiences
@@ -96,7 +96,7 @@ html
 
         .card-deck
           //- Prix Immobilier
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198430/pexels-photo-4198430.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color PRIX DE L'IMMOBILIER
@@ -107,7 +107,7 @@ html
               a.btn.btn-outline-dark(href="https://prix-immobilier.herokuapp.com/")= "Découvrir >>"
           
           //- Movie Rater
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198432/pexels-photo-4198432.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color MOVIE RATER
@@ -120,7 +120,7 @@ html
       .row
         .card-deck
           //- Rentabilité Immobilière
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198431/pexels-photo-4198431.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color RENTABILITÉ IMMOBILIÈRE
@@ -130,7 +130,7 @@ html
               a.btn.btn-outline-dark(href="#")= "Découvrir >>"
           
           //- Euler Project
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198429/pexels-photo-4198429.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color PROJET EULER
@@ -144,7 +144,7 @@ html
         .card-deck
           
           //- Brad Traversy
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198655/pexels-photo-4198655.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color BRAD TRAVERSY
@@ -154,7 +154,7 @@ html
               a.btn.btn-outline-dark(href="https://www.udemy.com/user/brad-traversy/")= "Traversy Media >>"
           
           //- Udemy
-          .card
+          .card.exp
             img(src="https://images.pexels.com/photos/4198654/pexels-photo-4198654.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800", alt="project image").card-img-top
             .card-body
               h5.card-title.title-color Udemy
