@@ -45,8 +45,16 @@ body {
 	background-color: #ba5855;
 }
 
+.chapter {
+	margin-bottom: 5%;
+}
+
 @media (max-width: 500px) {
 	.card-deck .card {
+		margin-bottom: 10%;
+	}
+
+	.chapter {
 		margin-bottom: 10%;
 	}
 }
