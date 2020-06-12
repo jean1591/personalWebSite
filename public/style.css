@@ -23,11 +23,30 @@ body {
 	color: #ba5855;
 }
 
+.card {
+	border-radius: 10px;
+}
+
+.card-deck .card {
+	margin-bottom: 5%;
+}
+
 .card img {
 	height: 300px;
+	width: 95%;
+	margin: auto;
+	margin-top: -5%;
 	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .bg-custom {
 	background-color: #ba5855;
+}
+
+@media (max-width: 500px) {
+	.card-deck .card {
+		margin-bottom: 10%;
+	}
 }
